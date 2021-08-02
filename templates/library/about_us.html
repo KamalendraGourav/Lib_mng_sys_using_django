@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>We Learning Together</title>
+    <style media="screen">
+    .jumbotron{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-color: rgba(107, 150, 87, 0.479);
+    }
+    .jumbotron h1{
+      text-align: center;
+    
+    }
+    .alert{
+      margin: 0px;
+    }
+    .container{
+      background-color:#171d14e7;
+    }
+    .lead{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-variant: small-caps;
+      font-kerning: inherit;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    {% include "library/navbar.html" %}
+  <br>
+  
+
+  <center><h3 class = 'alert alert-info'>About Us !</h3></center>
+    <hr class="my-1">
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, Reader!</h1>
+        <h4 class="text-center"> Let me tell you more about ourselves</h4><br>
+        <p class="lead">A service dedicated to world-wide readers.We believe "Writing comes from reading, and reading is the finest teacher of how to write." We provide online resources, professional support
+                 and guidance to all, whenever, and from wherever they wish and chaining together to make the world access to every corner. We have a great collection of stories, magazines, fictions, moral stories, academics, etc. that users can easily reach out just in few clicks and for free. This idea strucked into our thoughts during the pandemic situation when everything around us got frozen and we were just lost. Reading some stuffs just not provides us entertainment but also the knowledge, melody which enhances the minds ability to overcome such pandemic situation and brings out the positivity in our senses and make us feel freshen up.  </p>
+    
+ <br>       <blockquote class="blockquote text-center" style="widows: initial; color: white; color-adjust:unset;">
+          "Reading is an act of civilization; it’s one of the greatest acts of civilization because it takes the free raw material of the mind and builds castles of possibilities."
+          <footer class="blockquote-footer text-center" style="background-color:rgb(233, 91, 55)">Ben Okri</footer>
+        </blockquote>
+    </div>
+  <hr class="my-1">
+  <div class="serium" >
+    <p>Explore our Website</p>
+    <p class="lead">
+      <a class="btn btn-outline-success btn-md" href="/" role="button">HOME</a>
+    </p>
+  </div>
+    
+  </body>
+  {% include "library/footer.html" %}
+</html>

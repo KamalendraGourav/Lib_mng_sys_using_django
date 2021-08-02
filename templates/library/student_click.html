@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>We Learning Together</title>
+    <style media="screen">
+  bg-image {
+  
+
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(0px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+  </style>
+  </head>
+  <body>
+  {% include "library/navbar.html" %}
+<br><br>
+
+  <div class="bg-image">
+    <img src="{% static "images/library3.png" %}" alt="Book" style="width: 100%">
+    <div class="bg-text">
+      <h1 class="display-4">Hello Reader!</h1>
+      <p class="lead">Welcome to <strong>"The Learning Together"</strong> Library Management System.</p>
+      <hr class="my-4">
+      <p>You can access various features after Login/SignUp.</p>
+      <p class="lead">
+        <a class="btn btn-success btn-lg" href="studentsignup" role="button">SignUp</a>
+        <a class="btn btn-success btn-lg" href="studentlogin" role="button">Login</a>
+      </p>
+    </div>
+  </div>
+
+      {% include "library/footer.html" %}
+  </body>
+</html>

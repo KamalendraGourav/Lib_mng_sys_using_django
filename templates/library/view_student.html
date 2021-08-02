@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>We Learning Together</title>
+
+    <style media="screen">
+  
+
+    </style>
+  </head>
+  <body>
+    {% include "library/navbaradmin.html" %}
+    <br>
+    <br>
+    <hr class="my-2">
+    <h3 class="p-3 mb-2 bg-warning text-white" style = 'font-size: 40px;text-align:center;'>User registered in Library !</h3>
+
+    {% if students%}
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Name</th>
+        <th>Enrollment</th>
+        <th>Branch</th>
+      </tr>
+    </thead>
+  <tfoot>
+  <tr>
+    <td colspan="3">
+      <div class="links"></div>
+    </td>
+</tr>
+</tfoot>
+<tbody>
+    {% for s in students %}
+      <tr>
+        <td>{{s.get_name}}</td>
+        <td>{{s.enrollment}}</td>
+        <td>{{s.branch}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{%else%}
+<h1> No User Registered in Library</h1>
+{%endif%}
+
+  {% include "library/footer.html" %}
+  </body>
+</html>
