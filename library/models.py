@@ -58,16 +58,6 @@ class IssuedBook(models.Model):
         return self.enrollment
 
 
-class blog(models.Model):
-    title= models.CharField(blank=True, max_length=255)
-    slug=models.SlugField()
-    intro=models.TextField()
-    body = models.TextField()
-    image = models.ImageField()
-    date_added = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        ordering = ['date_added']
 
 
     
